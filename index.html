@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Card Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ANIMAL CARD GAME</h1>
+    <h2>Flip a Card & Answer Question!</h2>
+    <div class="score-board">
+        <div id="correct-label" class="badge">CORRECT <span id="correct-score">0</span></div>
+        <div id="wrong-label" class="badge">WRONG <span id="wrong-score">0</span></div>
+    </div>
+
+    <section class="card-game">
+        <div class="animal-card croco" data-framework="crocodile">
+            <img class="front-face" src="./animal_img/035-crocodile.svg" alt="">
+            <img class="back-face" src="./img/w.svg" alt="">
+        </div>
+        <div class="animal-card snake" data-framework="snake">
+            <img class="front-face" src="./animal_img/039-snake.svg" alt="">
+            <img class="back-face" src="./img/w.svg" alt="">
+        </div>
+        <div class="animal-card owl" data-framework="owl">
+            <img class="front-face" src="./animal_img/037-owl.svg" alt="">
+            <img class="back-face" src="./img/w.svg" alt="">
+        </div>
+        <div class="animal-card octo"  data-framework="octopus">
+            <img class="front-face" src="./animal_img/025-octopus.svg" alt="">
+            <img class="back-face" src="./img/w.svg" alt="" >
+        </div>
+
+    </section>
+    
+    <div class="question">
+        <div class="question-div">
+            <!-- <p>Color of a(n) ${animal}?</p>
+            <button class="a">A) Green</button><br>
+            <button class="b">B) Red</button><br>
+            <button class="c">C) Blue</button><br>
+            <button class="d">D) Red & Blue</button><br> -->
+        </div>
+
+        <!-- <div class="question-div question-div-2">
+            <p class="question question-2">What is this animals name?</p>
+            <button>A) Snake</button><br>
+            <button>B) Crocodile</button><br>
+            <button>C) Owl</button><br>
+        </div>
+        <div class="question-div question-div-3">
+            <p class="question question-3">Color of this animal?</p>
+            <button>A) Green</button><br>
+            <button>B) Red</button><br>
+            <button>C) Blue</button><br>
+        </div>
+        <div class="question-div question-div-4">
+            <p class="question question-4">This animals diet?</p>
+            <button>A) Carnivore</button><br>
+            <button>B) Omnivore</button><br>
+            <button>C) herbivore</button><br>
+        </div>  -->
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
