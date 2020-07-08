@@ -1,0 +1,25 @@
+
+
+
+[
+    {
+        "name": "snake",
+        "question": "which color is snake?",
+        "color": {
+            "red": true,
+            "blue": false,
+            "green": false,
+            "black": false
+        }
+    },
+    {
+        "name": "crocodile",
+        "question": "which color is crocodile?",
+        "color": {
+            "red": false,
+            "blue": false,
+            "green": true,
+            "black": false
+        } 
+    }
+]
