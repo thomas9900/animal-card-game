@@ -1,3 +1,5 @@
+
+
 * {
     padding: 0;
     margin: 0;
@@ -5,17 +7,30 @@
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, .score-board {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    color: rgb(255, 255, 255);
-}
-
 body {
     height: 100vh;
-    /* display: flex; */
-    background-color: rgb(119, 119, 119);
+    background-color: rgb(51, 43, 53);
+}
+
+h1, h2 {
+    text-align: center;
+    color: rgb(51, 43, 53);
+    background-color: white;
+    padding: 15px 0;
+}
+
+.score-board {
+    color: white;
+    font-size: large;
+    border: solid white;
+    border-radius: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 25px;
+    margin-top: 25px;
+    background-color: rgb(59, 59, 59);
 }
 
 .game-cards {
@@ -23,19 +38,20 @@ body {
     height: 300px;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     perspective: 1000px;
 }
 
+
+
 .animal-card {
     width: calc(25% - 10px);
-    height: 70%;
+    /* height: 70%; */
     margin: 40px 5px;
     position: relative;
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
-    
 }
 
 .animal-card:hover, button {
@@ -72,7 +88,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 400px;
-    font-size: 20px;
+    font-size: large;
+    color: white;
 }
 
 .btn-grid {
@@ -85,14 +102,44 @@ body {
 
 .btn {
     border: 3px solid rgb(252, 255, 68);
-    font-size: 20px;
-
+    font-size: large;
+    border-radius: 5px;
 }
 
 .btn:hover {
-    background-color: rgb(253, 255, 158);
+    filter: brightness(130%);
+
 }
 
 .hide {
     display: none;
 }
+
+.green-glow {
+    color: rgb(125, 255, 125);
+    text-shadow: 0 0 10px#a1ff89;
+}
+
+.red-glow {
+    color: rgb(255, 62, 62);
+    text-shadow: 0 0 10px#ff7676;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .game-cards {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        width: 350px;
+        height: 300px;
+        justify-items: center;
+    }
+    .animal-card {
+        width: 120px;
+        height: 170px;
+    }
+    #question-container {
+        margin-top: 170px;
+    }
+}
+

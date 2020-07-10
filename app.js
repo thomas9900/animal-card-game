@@ -81,7 +81,7 @@ const octopus = [
         ]
     },
     {
-        question: "What is the diet of a octopus?",
+        question: "What is the diet of an octopus?",
         answers: [
             {text: 'Omnivore', correct: false},
             {text: 'Carnivore', correct: true},
@@ -153,9 +153,14 @@ function selectAnswer(e) {
         correctScore++;
         correctScore_span.innerHTML = correctScore;
         unflipCard();
-    } else 
-    wrongScore++;
-    wrongScore_span.innerHTML = wrongScore;
+        correctScore_span.classList.add('green-glow');
+        setTimeout(() => correctScore_span.classList.remove('green-glow'), 400);
+    } else {
+        wrongScore++;
+        wrongScore_span.innerHTML = wrongScore;
+        wrongScore_span.classList.add('red-glow');
+        setTimeout(() => wrongScore_span.classList.remove('red-glow'), 400);
+    }
 }
 
 function unflipCard() {
