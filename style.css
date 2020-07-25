@@ -86,7 +86,6 @@ span {
 .question-container { 
     font-size: 2.5rem;
     color: white;
-    /* width: 40rem; */
     margin-left: auto;
     margin-right: auto;
     text-align: center; 
@@ -97,8 +96,6 @@ span {
     margin: 2rem 0;
     grid-template-columns: repeat(2, auto);
     gap: 1rem;
-    /* width: 20rem; */
-    /* align-items: center; */
     justify-content: center;
 }
 
@@ -108,7 +105,6 @@ span {
     border: 3px solid rgb(252, 255, 68);
     border-radius: 0.5rem;
     background-color: white;
-    
 }
 
 .btn:hover {
@@ -133,7 +129,6 @@ span {
     text-shadow: 0 0 1rem#ff7676;
 }
 
-
 @media only screen and (max-width: 37.5em) {
     .game-cards {
         display: grid;
@@ -146,7 +141,6 @@ span {
     .animal-card {
         width: 12rem;
         height: 18rem;
-        /* margin-bottom: -2rem; */
     }
 
     .question-container {
@@ -155,7 +149,6 @@ span {
 
     .btn-grid {
         justify-items: center;
-        
     }
 }
 
