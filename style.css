@@ -1,10 +1,9 @@
-
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%; /* 1rem = 10px */
 }
 
 body {
@@ -13,41 +12,42 @@ body {
 }
 
 h1, h2 {
+    font-size: 3rem;
     text-align: center;
     color: rgb(51, 43, 53);
     background-color: white;
-    padding: 15px 0;
+    padding: 1.5rem 0;
 }
 
 .score-board {
-    color: white;
-    font-size: large;
-    border: solid white;
+    font-size: 2.5rem;
+    width: 20rem;
     border-radius: 5px;
-    width: 200px;
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+    color: white;
+    background-color: rgb(59, 59, 59);
+    border: solid white;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding: 25px;
-    margin-top: 25px;
-    background-color: rgb(59, 59, 59);
+}
+
+span {
+    font-size: 1.5rem;
 }
 
 .game-cards {
-    width: 600px;
-    height: 300px;
-    margin: auto;
     display: flex;
-    /* flex-wrap: wrap; */
-    perspective: 1000px;
+    margin: auto;
+    width: 60rem;
+    height: 30rem;
+    perspective: 100rem;
 }
-
-
 
 .animal-card {
     width: calc(25% - 10px);
-    /* height: 70%; */
-    margin: 40px 5px;
+    margin: 4rem 0.5rem;
     position: relative;
     transform: scale(1);
     transform-style: preserve-3d;
@@ -69,46 +69,54 @@ h1, h2 {
 
 .front-face,
 .back-face {
+    background: rgb(252, 255, 68);
     width: 100%;
     height: 100%;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 2rem;
+    border-radius: 0.5rem;
     position: absolute;
-    background: rgb(252, 255, 68);
     backface-visibility: hidden;
 }
 
 .front-face {
-    transform: rotateY(180deg);
     background: rgb(255, 255, 255);
+    transform: rotateY(180deg);
 }
 
-#question-container { 
-    text-align: center; 
+.question-container { 
+    font-size: 2.5rem;
+    color: white;
+    /* width: 40rem; */
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
-    font-size: large;
-    color: white;
+    text-align: center; 
 }
 
 .btn-grid {
     display: grid;
+    margin: 2rem 0;
     grid-template-columns: repeat(2, auto);
-    gap: 10px;
-    margin: 20px 0;
-
+    gap: 1rem;
+    /* width: 20rem; */
+    /* align-items: center; */
+    justify-content: center;
 }
 
 .btn {
+    font-size: 2rem;
+    width: 15rem;
     border: 3px solid rgb(252, 255, 68);
-    font-size: large;
-    border-radius: 5px;
+    border-radius: 0.5rem;
+    background-color: white;
+    
 }
 
 .btn:hover {
     filter: brightness(130%);
+}
 
+.darken {
+    filter: brightness(60%);
 }
 
 .hide {
@@ -117,29 +125,35 @@ h1, h2 {
 
 .green-glow {
     color: rgb(125, 255, 125);
-    text-shadow: 0 0 10px#a1ff89;
+    text-shadow: 0 0 1rem#a1ff89;
 }
 
 .red-glow {
     color: rgb(255, 62, 62);
-    text-shadow: 0 0 10px#ff7676;
+    text-shadow: 0 0 1rem#ff7676;
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 37.5em) {
     .game-cards {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        width: 350px;
-        height: 300px;
+        width: 30rem;
+        height: 30rem;
         justify-items: center;
     }
     .animal-card {
-        width: 120px;
-        height: 170px;
+        width: 13rem;
+        height: 18rem;
+        /* margin-bottom: -2rem; */
     }
-    #question-container {
-        margin-top: 170px;
+
+    .question-container {
+        margin-top: 22rem;
+    }
+    .btn-grid {
+        justify-items: center;
+        
     }
 }
 

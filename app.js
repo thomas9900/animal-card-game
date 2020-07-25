@@ -9,6 +9,7 @@ const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const cards = document.querySelectorAll('.animal-card');
+const card = document.querySelector('.animal-card');
 
 const owl = [
     {
@@ -166,6 +167,7 @@ function selectAnswer(e) {
 function unflipCard() {
     currentCard.classList.remove('flip');
     questionContainerElement.classList.add('hide');
+    currentCard.classList.add('darken');
 
     // reset board  
     [hasFlippedCard, lockBoard] = [false, false];
