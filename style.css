@@ -142,8 +142,9 @@ span {
         height: 30rem;
         justify-items: center;
     }
+
     .animal-card {
-        width: 13rem;
+        width: 12rem;
         height: 18rem;
         /* margin-bottom: -2rem; */
     }
@@ -151,6 +152,7 @@ span {
     .question-container {
         margin-top: 22rem;
     }
+
     .btn-grid {
         justify-items: center;
         
